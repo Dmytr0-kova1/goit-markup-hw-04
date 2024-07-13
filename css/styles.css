@@ -53,16 +53,12 @@ img {
   overflow: hidden;
 }
 
-.icon-instagram,
-.icon-in,
-.icon-facebook,
-.icon-twitter {
-}
-
 /* --- Header --- */
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -84,6 +80,19 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
+  position: relative;
+  color: #404bbf;
+}
+
+.nav-link::after {
+  content: _;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  background-color: #404bbf;
+  border-radius: 2px;
 }
 
 .logo {
@@ -108,6 +117,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts {
@@ -128,6 +138,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
@@ -135,6 +146,9 @@ img {
 .contacts-link:hover,
 .contacts-link:focus {
   color: #404bbf;
+}
+
+.nav-link::after {
 }
 
 /* --- --- */
@@ -151,6 +165,7 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/people-office1.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1440px;
@@ -183,6 +198,7 @@ img {
   border-radius: 4px;
   padding: 16px 32px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -198,13 +214,15 @@ img {
 }
 
 .description-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #8e8f99;
   border-radius: 4px;
   width: 264px;
   height: 112px;
   background-color: #f4f4fd;
   margin-bottom: 8px;
-  padding: 24px 100px;
 }
 
 .description-list {
@@ -245,8 +263,29 @@ img {
   gap: 24px;
 }
 
+.icon-link {
+}
+
+.icon-item {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  background-color: #404bbf;
+}
+
 .icon-socials {
-  fill: #4d5ae5;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  fill: #f4f4fd;
 }
 
 .icon-socials:hover {
@@ -330,6 +369,19 @@ img {
 .portfolio-item {
   background-color: #fff;
   width: calc((100% 5 * 24) / 6);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-item:hover {
+  transform: translateY(0%);
+}
+
+.container-portfolio-img {
+  position: relative;
+  overflow: hidden;
+
 }
 
 .portfolio-img {
@@ -358,36 +410,38 @@ img {
   color: #434455;
 }
 
+.text-img {
+  color: #f4f4fd;
+  position: absolute;
+  top: 0;
+   font-size: 16px;
+   line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
+    background-color: #4d5ae5;
+    height: 100%;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
 /* --- --- */
 
 /* --- Footer --- */
 
 .container-icon-footer {
-  max-width: 208px;
-  margin: 0 auto;
-  margin-top: -100px;
-}
-
-.icon-item-footer {
+  display: flex;
+  align-items: baseline;
 
 }
 
-.icon-list {
-
-}
-
-.icon-link {
-}
 
 .icon-social-footer {
-  fill: #4d5ae5;
+  fill: #f4f4fd;
 }
 
-.icon-social-footer:hover {
-  fill: #31d0aa;
-}
-
-.footer-title {
+.footer-text-icon {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -396,7 +450,33 @@ img {
   margin-bottom: 16px;
 }
 
+.icon-list {
+  display: flex;
+  gap: 16px;
+}
+
+.icon-item-footer {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-link:hover,
+.icon-link:focus {
+background-color: #31d0aa;
+}
+
 .footer-container {
+  margin-right: 120px;
 }
 
 .footer {
