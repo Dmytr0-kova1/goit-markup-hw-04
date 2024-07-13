@@ -69,6 +69,7 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
+  color: #404bbf;
 }
 
 .header-logo {
@@ -84,7 +85,6 @@ img {
 
 .nav-link {
   position: relative;
-  color: #404bbf;
 }
 
 .nav-link::after {
