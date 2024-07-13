@@ -74,8 +74,6 @@ img {
 .header-logo {
   padding: 24px 0;
   margin-right: 76px;
-  position: relative;
-  color: #404bbf;
 }
 
 .nav-list {
@@ -84,8 +82,13 @@ img {
   gap: 40px;
 }
 
-.header-logo::after {
-  content: ;
+.nav-link {
+  position: relative;
+  color: #404bbf;
+}
+
+.nav-link::after {
+  content: _;
   width: 100%;
   position: absolute;
   left: 0;
@@ -260,6 +263,7 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+   gap: 24px;
 }
 
 .icon-link {
@@ -276,11 +280,11 @@ img {
   justify-content: center;
   width: 40px;
   height: 40px;
-  gap: 24px;
+ 
 }
 
-.icon-item:hover,
-.icon-item:focus {
+.icon-link:hover,
+.icon-link:focus {
   background-color: #404bbf;
 }
 
@@ -379,7 +383,7 @@ img {
   overflow: hidden;
 }
 
-.portfolio-item:hover {
+.portfolio-img:hover {
   transform: translateY(0%);
 }
 
@@ -407,8 +411,9 @@ img {
 }
 
 .text-img {
+ position: absolute; 
   color: #f4f4fd;
-  position: absolute;
+
   top: 0;
   font-size: 16px;
   line-height: 1.5;
