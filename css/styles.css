@@ -83,7 +83,7 @@ img {
   gap: 40px;
 }
 
-.nav-start {
+.nav-link {
   position: relative;
   color: #404bbf;
 }
@@ -154,6 +154,8 @@ img {
 
 .nav-link::after {
 }
+
+
 
 /* --- --- */
 
@@ -281,8 +283,8 @@ img {
   height: 40px;
 }
 
-.icon-link:hover,
-.icon-link:focus {
+.icon-item:hover,
+.icon-item:focus {
   background-color: #404bbf;
 }
 
@@ -309,6 +311,7 @@ img {
 
 .team-list {
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
