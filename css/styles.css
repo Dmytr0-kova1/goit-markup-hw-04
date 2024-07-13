@@ -87,8 +87,11 @@ img {
   color: #404bbf;
 }
 
+
+
+
 .nav-link::after {
-  content: _;
+  content: _ ;
   width: 100%;
   position: absolute;
   left: 0;
@@ -470,6 +473,8 @@ img {
 }
 
 .footer-container {
+  display: flex;
+  align-items: baseline;
   margin-right: 120px;
 }
 
