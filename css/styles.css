@@ -53,6 +53,12 @@ img {
   overflow: hidden;
 }
 
+.icon-instagram,
+.icon-in,
+.icon-facebook,
+.icon-twitter {
+}
+
 /* --- Header --- */
 
 .page-header {
@@ -146,6 +152,7 @@ img {
     ),
     url(../images/people-office1.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -197,9 +204,8 @@ img {
   height: 112px;
   background-color: #f4f4fd;
   margin-bottom: 8px;
+  padding: 24px 100px;
 }
-
-
 
 .description-list {
   display: flex;
@@ -237,6 +243,14 @@ img {
   justify-content: center;
   flex-direction: row;
   gap: 24px;
+}
+
+.icon-socials {
+  fill: #4d5ae5;
+}
+
+.icon-socials:hover {
+  fill: #404bbf;
 }
 
 .team-title {
@@ -348,6 +362,40 @@ img {
 
 /* --- Footer --- */
 
+.container-icon-footer {
+  max-width: 208px;
+  margin: 0 auto;
+  margin-top: -100px;
+}
+
+.icon-item-footer {
+
+}
+
+.icon-list {
+
+}
+
+.icon-link {
+}
+
+.icon-social-footer {
+  fill: #4d5ae5;
+}
+
+.icon-social-footer:hover {
+  fill: #31d0aa;
+}
+
+.footer-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
 .footer-container {
 }
 
@@ -379,7 +427,5 @@ img {
   text-transform: uppercase;
   color: #f4f4fd;
 }
-
-
 
 /* --- --- */
